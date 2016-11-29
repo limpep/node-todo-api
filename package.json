@@ -9,6 +9,7 @@
   "author": "Ergun Polat",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^2.2.12"
+    "mongodb": "^2.2.12",
+    "mongoose": "^4.7.0"
   }
 }
