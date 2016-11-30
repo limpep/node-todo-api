@@ -6,6 +6,11 @@ var {Todo} = require('./models/todo');
 var {User} = require('./models/user');
 
 var app = express();
+
+//to start mongodb
+//C:\Program Files\MongoDB\Server\3.2\bin>
+//mongod.exe --dbpath \Users\Admin\mongo-data
+
 //middlewear
 app.use(bodyParser.json());
 
