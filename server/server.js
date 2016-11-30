@@ -8,7 +8,7 @@ var {Todo} = require('./models/todo');
 var {User} = require('./models/user');
 
 var app = express();
-
+const port = process.env.PORT || 3000;
 //to start mongodb
 //C:\Program Files\MongoDB\Server\3.2\bin>
 //mongod.exe --dbpath \Users\Admin\mongo-data
@@ -59,8 +59,8 @@ app.get('/todos/:id', (req, res) => {
 
 
 //listening on port 3000
-app.listen(3000, () => {
-  console.log('Started on port 3000');
+app.listen(port, () => {
+  console.log(`Started on port ${port}`);
 });
 
 module.exports = {app};
